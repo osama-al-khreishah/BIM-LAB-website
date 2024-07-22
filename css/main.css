@@ -1505,8 +1505,9 @@ body.white {
   letter-spacing: 4px;
 }
 .widget_tag_cloud {
-    margin-top: 50px;
+    margin-top: 49px;
 }
+
 .widget_tag_cloud h6 {
    font-family: font-file-82132;
    font-size: 34px;
