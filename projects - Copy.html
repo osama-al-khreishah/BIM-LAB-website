@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>projects-details-</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <style>
+        .full-height {
+          min-height: 100vh;
+          background: #f0f0f0; /* Example background */
+        }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .topnav {
+      overflow: hidden;
+      background-color: #ffffff00;
+    }
+    
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    .topnav a:hover {
+      background-color: #808080;
+      color: rgb(247, 247, 247);
+    }
+    
+    .topnav a.active {
+      background-color: #ffffff00;
+      color: rgb(255, 170, 0);
+    }
+    .content {
+        padding: 80px 16px;  /* Adjust padding to prevent content from being hidden behind navbar */
+        margin-top: 50px;  /* Margin to separate content from fixed navbar */
+        text-align: center; /* Center align the content */
+    }
+    </style>
+    </head>
+    <body>
+    
+    <!-- //<div class="full-height">
+    // <h1>This section is at least 100vh tall</h1>
+    //</div> -->
+    
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="services.html">services</a>
+      <a href="contact us .html">Contact</a>
+      <a href="about.html">About us</a>
+      <a class="active" href ="projects.html">Projects</a>
+    </div>
+    <div class="sticky-container">
+      <div class="bg-text">
+          BIM-LAB
+      </div>
+  </div>
+    <div style="padding-left:16px">
+      
+      <style>
+        body, html {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+    * {
+     box-sizing:content-box;
+    }
+    .sticky-container {
+    position:sticky;
+    height: 0vh; /* This sets the container to the full viewport height */
+    overflow:initial; /* This prevents scrolling within the container */
+    }
+    .bg-image {
+    /* Full height */
+     height: 100%; 
+     /* Center and scale the image nicely */
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size:contain;
+     }
+     /* Images used */
+    .img1 { background-image: url("image test\images (17).jfif"); }
+    .img2 { background-image: url("img_girl.jpg"); }
+    .img3 { background-image: url("img_lights.jpg"); }
+    .img4 { background-image: url("img_nature.jpg"); }
+    .img5 { background-image: url("img_forest.jpg"); }
+    .img6 { background-image: url("img_woods.jpg"); }
+    
+
+    /* Position text in the middle of the page/image */
+    .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight:300;
+    /*font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+    font-size: 80px;
+    height:0vh;
+    border: 3px solid #f1f1f1;
+    position:sticky;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 5;
+    width: 500px;
+    height:50%;
+    padding: 5px;
+    text-align:center;
+    }
+    </style>
+    </head>
+    <body>
+        <div class=""></div>
+        <a href="index.html"><img src="image test\1.jpg" alt="image1" style="width: 24%; border-radius: 3%;" height="900px"></a>                
+        <a href="index.html"><img src="image test\2.jpg" alt="image1" style="width: 24%;border-radius: 3%" height="900px"></a>                
+        <a href="index.html"><img src="image test\3.jpg" alt="image1" style="width: 24%;border-radius: 3%" height="900px"></a>                
+        <a href="index.html"><img src="image test\4.jpg" alt="image1" style="width: 24%;border-radius: 3%" height="900px"></a>                
+       <!--<div class="bg-text">BIM LAB</div>-->
+    
+    </body>
+    <style>
+    
+    @font-face {
+        font-family: 'Moayad_Light';
+        src: url('NeoSansProLight.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'Moayad_Regular';
+        src: url('NeoSansPro.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    /*------------------------------------------------------------------------------------------------------*/
+    
+    
+    </style>
+    </head>
+    <body>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BIM Lab</title>
+    <meta name="description" content="Engineering Services / BIM Services">
+    <meta name="keywords" content="bim,jordan,amman,lab,building,information,modelling,modeling,implementation,engineering,services,revit,autodesk,developers,architecture,mep,structure,mechanical,electrical,plumbing,project,projects">
+    <script type="text/javascript">
+        var picture1 = "img/about2.jpg";
+        var picture2 = "img\about1.jpg";
+        if (document.images) {
+            image1 = new Image();
+            image1.src = "img/about1.jpg";
+            image2 = new Image();
+            image2.src = "img/about2.jpg";
+        }
+        function mover(img) {
+            document["change"].src = image1.src;
+        }
+        function mout(img) {
+            document["change"].src = image2.src;
+        }
+    </script>
+    <link rel='stylesheet' id='jayjay-css' media='all'/>
+    <script type='text/javascript' src='javascript/jquery.js'></script>
+    <script type='text/javascript' src='javascript/jquery-migrate.min.js'></script>
+    <script type='text/javascript' src='javascript/jquery.cookie.js'></script>
+    <meta name="generator" content="WPML ver:3.1.8.4 stt:1,42;0"/>
+    <link rel="alternate" hreflang="en-US" href="contact us .html"/>
+    <link rel="alternate" hreflang="pl-PL" href="about.html"/>
+    <script type='text/javascript'>
+        function OnMouseIn(elem) {
+            elem.getElementsByTagName('div')[0].style.display = 'block';
+        }
+        function OnMouseOut(elem) {
+            elem.getElementsByTagName('div')[0].style.display = 'none';
+        }
+    </script>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/third-party.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script>
+        jQuery(document).ready(function () {
+            $('.m-menu').mouseover(function() {
+                $(this).children('.arr-class').show();
+            });
+            $('.m-menu').mouseout(function() {
+                $(this).children('.arr-class').hide();
+            });
+        });
+    </script>
+    <script src="javascript/modernizr-2.8.3.min.js"></script>
+    <meta property="og:image" content="https://pbs.twimg.com/profile_images/601407094277873664/WT2mk28E_400x400.jpg"/>
+    <link type="text/css" media="screen" rel="stylesheet" href="css/awwwards.css"/>
+    <script type="text/javascript" src="javascript/freewall.js"></script>
+    <style type="text/css">
+        .free-wall {
+            margin: 15;
+            right: 4%;
+            width: 90%;
+            float: right;
+        }
+        .brick img {
+            margin: 0;
+            display: block;
+        }
+    </style>
+</head>
+<body tabindex="0" style="overflow-y: visible;" class="page page-id-15 page-template page-template-template-skills page-template-template-skills-php skills">
+    <div id="nav_bar">
+        <a class="logo" rel="index" href="index.html">
+            <img src="img\bim-small - Copy.png" alt="">
+            <center></center>
+        </a>
+    
+        <nav class="en">
+        </nav>
+    </div>
+    <!-- <div style="display: block; opacity: 1;" id="page" class="en">
+        <div id="demo" class="container gallery magicwall">
+            <div id="freewall" class="free-wall"></div>
+        </div> -->
+        <div id="particles-js"><canvas height="608" width="1301" style="width: 100%; height: 100%;"></canvas></div>
+        <div class="preloader">
+            <div class="inner">
+                <img src="img/logopreload.png">
+                <span>BIM Lab is Loading</span>
+                <div class="progress-bar">
+                    <div class="progress-bar_bg">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="blog-link" href="clients.php">
+            <img src="img/blogdark.png">
+            <span class="folded-corner"></span>
+        </a>
+        <style>
+            .port-caption {
+                background-color: #ffffff;
+                display: none;
+                height: 100%;
+                opacity: 0.7;
+                position: absolute;
+                width: 100%;
+                transition: all 0.3s ease-in-out 0s;
+                vertical-align: middle;
+            }
+            .port-caption:hover {
+                height: 100%;
+                width: 100%;
+            }
+            .lnk {
+                color: white;
+                font-family: 'Moayad_Regular', Arial, Helvetica, sans-serif;
+                text-align: center;
+            }
+            .lnk:hover {
+                color: #FFFFFF;
+            }
+        </style>
+        <script type="text/javascript">
+        </script>
+        <script src="javascript/jquery-1.11.2.min.js"></script>
+        <script>window.jQuery || document.write('<script src="javascript/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="javascript/velocity.min.js"></script>
+        <script src="javascript/plugins.js"></script>
+        <script src="javascript/main.js"></script>
+        <script type="text/javascript">
+
+        </script>
+        <script src="javascript/particles.js"></script>
+        <script src="javascript/app.js"></script>
+    </div>
+</body>
+<html>
+<body>          
+        </div>
+        
+        <div style="padding-left:8px">
+          <!-- Add content here if needed -->
+        </div>
+        <div style="padding-left:16px">
+            <!-- Add content here if needed -->
+          </div>
+          <style>
+            * {
+              box-sizing: border-box;
+            }
+            
+            body {
+              margin: 0;
+              font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            .header {
+              text-align: center;
+              padding: 32px;
+            }
+            
+            .row {
+              display: -ms-flexbox; /* IE 10 */
+              display: flex;
+              -ms-flex-wrap: wrap; /* IE 10 */
+              flex-wrap: wrap;
+              padding: 0 4px;
+            }
+            
+            /* Create two equal columns that sits next to each other */
+            .column {
+              -ms-flex: 25%; /* IE 10 */
+              flex: 25%;
+              padding: 0 4px;
+            }
+            
+            .column img {
+              margin-top: 8px;
+              vertical-align: middle;
+            }
+            
+            /* Style the buttons */
+            .btn {
+              border: none;
+              outline: none;
+              padding: 10px 16px;
+              background-color: #f1f1f1;
+              cursor: pointer;
+              font-size: 18px;
+            }
+            
+            .btn:hover {
+              background-color: #ddd;
+            }
+            
+            .btn.active {
+              background-color: rgb(255, 170, 0);
+              color: white;
+            }
+            </style>
+            </head>
+            <body>            
+            <div class="header" id="myHeader" style="color: #f96b05;">
+              <h1>click on the image to open the project <style></style></h1>
+              Click on the buttons to change the grid view.</p>
+              <button class="btn" onclick="one()">1</button>
+              <button class="btn active" onclick="two()">2</button>
+              <button class="btn" onclick="four()">4</button>
+            </div>
+            
+            <!-- Photo Grid -->
+            <div class="row"> 
+              <div class="column">
+                <a href="index.html"><img src="C:\Users\Osama al khreishah\Desktop\COMPANY\STOLEN\Stolen Website\image test\1.jpg" alt="image1" style="width:100%;border-radius: 4%;"></a>
+                <a href="services.html"><img src="image test\5.jpg" style="width:100%;border-radius: 4%;"></a>
+                <a href="projects.html"><img src="image test\images (4).jfif" style="width:100%;border-radius: 4%;"></a>
+                <a href="index.html"><img src="image test\images (5).jfif" style="width:100%;border-radius: 4%;"></a>
+                <a href="services.html"><img src="image test\images (6).jfif" style="width:100%;border-radius: 4%;"></a>
+                <a href="index.html"><img src="image test\images (7).jfif" style="width:100%;border-radius: 4%;"></a>
+              </div>
+              <div class="column">
+                <a href="index.html"><img src="image test\images (8).jfif" alt="image 8 " style="width:100%;border-radius: 4%; "></a>
+                <a href="index.html"><img src="image test\images (9).jfif" style="width:100%;border-radius: 4%;"></a>
+                <a href="index.html"><img src="image test\images (10).jfif" style="width:100%;border-radius: 4%;"></a>
+                <a href="index.html"><img src="image test\images (11).jfif" style="width:100%;border-radius: 4%;"></a>
+                <a href="index.html"><img src="image test\images (12).jfif" style="width:100%;border-radius: 4%;"></a>
+                <a href="index.html"><img src="image test\images (13).jfif" style="width:100%;border-radius: 4%;"></a>
+              </div>  
+              <div class="column">
+                <a href="index.html"><img src="image test\images (14).jfif" style="width:100%;border-radius: 4%;"></a>
+                <a href="index.html"><img src="image test\images (15).jfif" style="width:100%;border-radius: 4%;"></a>
+                <a href="index.html"><img src="image test\images (16).jfif" style="width:100%;border-radius: 4%;"></a>
+                <a href="index.html"><img src="image test\images (17).jfif" style="width:100%;border-radius: 4%;"></a>
+                <a href="index.html"><img src="image test\images (18).jfif" style="width:100%;border-radius: 4%;"></a>
+                <a href="index.html"><img src="image test\images (19).jfif" style="width:100%;border-radius: 4%;"></a>
+                <a href="index.html"><img src="image test\images (20).jfif" style="width:100%;border-radius: 4%;"></a>
+              </div>
+              <div class="column">
+                <a href="index.html"><img src="image test\images (21).jfif" style="width:100%;border-radius: 4%;"></a>
+                <a href="index.html"><img src="image test\images (22).jfif" style="width:100%;border-radius: 4%;"></a>
+                <a href="index.html"><img src="image test\images (23).jfif" style="width:100%;border-radius: 4%;"></a>
+                <a href="index.html"><img src="image test\images (24).jfif" style="width:100%;border-radius: 4%;"></a>
+                <a href="index.html"><img src="image test\images (25).jfif" style="width:100%;border-radius: 4%;"></a>
+                <a href="index.html"><img src="image test\images (26).jfif" style="width:100%;border-radius: 4%;"></a>
+              </div>
+            </div>
+            
+            <script>
+            // Get the elements with class="column"
+            var elements = document.getElementsByClassName("column");
+            
+            // Declare a loop variable
+            var i;
+            
+            // Full-width images
+            function one() {
+                for (i = 0; i < elements.length; i++) {
+                elements[i].style.msFlex = "100%";  // IE10
+                elements[i].style.flex = "100%";
+              }
+            }
+            
+            // Two images side by side
+            function two() {
+              for (i = 0; i < elements.length; i++) {
+                elements[i].style.msFlex = "50%";  // IE10
+                elements[i].style.flex = "50%";
+              }
+            }
+            
+            // Four images side by side
+            function four() {
+              for (i = 0; i < elements.length; i++) {
+                elements[i].style.msFlex = "25%";  // IE10
+                elements[i].style.flex = "25%";
+              }
+            }
+            
+            // Add active class to the current button (highlight it)
+            var header = document.getElementById("myHeader");
+            var btns = header.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+              btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+              });
+            }
+            </script>
+            
+            </body>
+            </html>          
+        
+        
+</body>
+</html>
+ <!-- Header -->
+             <!--
+             <h2>888888888888888888888</h2>
+             <h6>777777777777777777777</h6>
+             <h1>1111111111111111111111</h1>
+             <h1>0000000000000000000000</h1>
+             <h1>9999999999999999999999</h1>-->

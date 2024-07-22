@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style>
+
+@font-face {
+    font-family: 'Moayad_Light';
+    src: url('NeoSansProLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Moayad_Regular';
+    src: url('NeoSansPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.myfont{font-family: 'Moayad_Regular', Arial, Helvetica, sans-serif; font-size:34pt; }
+p{ font-size:14pt;font-family: 'Moayad_Light', Arial, Helvetica, sans-serif; }
+
+</style>
+
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		
+<title>BIM Lab</title>
+<meta name="description" content="Engineering Services / BIM Services">
+<meta name="keywords" content="bim,jordan,amman,lab,building,information,modelling,modeling,implementation,engineering,services,revit,autodesk,developers,architecture,mep,structure,mechanical,electrical,plumbing,project,projects
+">
+<script type="text/javascript">
+var picture1 = "img/tbh_orange.png";
+var picture2 = "img/tbh.png";
+if (document.images) {
+image1 = new Image();
+image1.src = picture1
+image2 = new Image();
+image2.src = picture2;
+}
+function mover(img){
+document["change"].src = img.src;
+}
+function mout(img){
+document["change"].src = img.src;
+}
+</script>
+		
+<link rel="stylesheet" id="jayjay-css" href="css/style.css" media="all">
+<script type="text/javascript" src="javascript/jquery.js"></script>
+<script type="text/javascript" src="javascript/jquery-migrate.js"></script>
+<script type="text/javascript" src="javascript/jquery_003.js"></script>
+      <link href="css/css_002.css" rel="stylesheet" type="text/css">
+        <link href="css/css.css" rel="stylesheet" type="text/css">
+
+
+
+        <!--<link href='http://fonts.googleapis.com/css?family=La+Belle+Aurore' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic' rel='stylesheet' type='text/css'>-->
+
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/third-party.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="javascript/modernizr-2.js"></script>
+        <script src="js"></script><script src="javascript/main_002.js"></script>
+        <meta property="og:image" content="https://pbs.twimg.com/profile_images/601407094277873664/WT2mk28E_400x400.jpg">
+        <link type="text/css" media="screen" rel="stylesheet" href="css/awwwards.css">
+
+	<script src="javascript/common.js" charset="UTF-8" type="text/javascript"></script>
+        <script src="javascript/util.js" charset="UTF-8" type="text/javascript"></script>
+        <script src="javascript/stats.js" charset="UTF-8" type="text/javascript"></script>
+<script> 
+jQuery(document).ready(function () { 
+$('.m-menu').mouseover(function() { 
+$(this).children('.arr-class').show(); 
+}); 
+ 
+$('.m-menu').mouseout(function() { 
+$(this).children('.arr-class').hide(); 
+}); 
+
+$('#page').hide(); 
+$('.preloader').show(); 
+var i=0; 
+var px="px"; 
+var x='"'; 
+var y;
+var mx=400;
+function myTimer() {
+i=i+10;
+mx=mx-10; 
+y=i+px; 
+$('.progress-bar_bg div').css("width",y); 
+
+if (mx == 0)
+{
+clearInterval(myVar);
+$('#page').show(); 
+$('.preloader').slideUp("slow");
+}
+}
+var myVar = setInterval(function(){ myTimer() }, 60); 
+}); 
+</script>
+
+</head>
+
+
+
+
+<body class="home page page-id-11 page-template page-template-template-home page-template-template-home-php">
+
+       <div id="nav_bar">
+
+            <a class="logo" rel="index" href="http://www.bimlab.com/">
+                <img src="img/bim-small.png" alt="">
+                <center></center>
+            </a>
+
+            <div class="lang">
+                <a href="#" class="active">EN</a>
+                <a href="ar/aboutus.html" class="">عر</a>
+            </div>
+
+            
+        <nav class="en">
+               <!-- <a rel="index" href="index.html" class="home-link active"><img src="img/home_orange.png"></a>
+                <a rel="BIM" href="BIM.html"><img src="img/bim.png"></a>
+                <a rel="about" href="about.html"><img src="img/about.png"></a>
+                <a rel="services" href="services.html"><img src="img/services.png"></a>
+                <a rel="projects" href="projects.php"><img src="img/projects.png"></a>
+                <a rel="contact" href="contact.php"><img src="img/contact.png"></a>-->
+                <a rel="index" href="index.html" class="m-menu"><i class="fa fa-home"></i>
+<div class="arr-class"></div>
+</a>
+
+                <a rel="BIM" href="bim.html" class="m-menu"><i class="fa fa-user-secret"></i><div class="arr-class"></div></a>
+                <a rel="about" href="aboutus.html" class="active m-menu"><i class="fa fa-cart-plus"></i><div class="arr-class"></div></a>
+                <a rel="services" href="services.html" class="m-menu"><i class="fa fa-code"></i><div class="arr-class"></div></a>
+                <a rel="projects" href="projects.php" class="m-menu"><i class="fa fa-picture-o"></i><div class="arr-class"></div></a>
+                <a rel="contact" href="contactus.php" class="m-menu"><i class="fa fa-envelope-o"></i><div class="arr-class"></div></a>
+            </nav>
+
+            <ul>
+                <li><a href="https://www.twitter.com/BIMLab" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/bim-lab" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.facebook.com/BIMLabJo" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://thebimhub.com/companies/bim-lab-2/" target="_blank" onMouseOver="mover(image1)" onMouseOut="mout(image2)"><img name="change" src="img/tbh.png" border=0></a></li>
+            </ul>
+
+            <a id="mobile-link" href=""><i class="fa fa-bars"></i></a>
+
+        </div>
+
+        <div style="display: block; opacity: 1;" id="page" class="en">
+
+
+
+    <div class="container about">
+
+       <!-- <span class="tags top-tags"> &nbsp;&nbsp;&nbsp;&lt;body&gt;</span>-->
+
+        <div class="text-zone">
+
+            <h1 class="blast-root" aria-label="About me" style="font-family:'Moayad_Regular', Arial, Helvetica, sans-serif;">
+              About Us            </h1>
+
+
+           <p class="blast-root" style="font-family:'Moayad_Light', Arial, Helvetica, sans-serif;">
+<span style="font-family:'Moayad_Regular', Arial, Helvetica, sans-serif; font-size:14pt;">BIM Lab </span>is a Building Information
+consultancy located in Amman, Jordan we
+provide strategic consultancy and planning to
+Engineering Consultants, contractors and owners
+to deliver high end drawings and models through
+technology.<br><br>
+<span style="font-family:'Moayad_Regular', Arial, Helvetica, sans-serif; font-size:14pt;">BIM Lab </span> exists where design, building and
+technology intersect. <span style="font-family:'Moayad_Regular', Arial, Helvetica, sans-serif; font-size:14pt;">BIM Lab </span> is an engineering
+services company we combine the knowledge
+and experience of architecture, engineering,
+project management, software engineering
+and education with a passion for technology to
+improve the ways of how buildings are designed
+and constructed.<br><br>
+Building Information as a booming
+technology and industry has some theoretical
+principles. <span style="font-family:'Moayad_Regular', Arial, Helvetica, sans-serif; font-size:14pt;">BIM Lab </span> helps the institutes to
+identify, implement and manage this technology
+and business practice that will enable more
+effective coordination, communication and
+collaboration.
+</p>
+
+        </div>
+        </div>
+        
+        
+        
+
+       <div class="skills-charts">
+
+        
+
+        <img src="img/about1.jpg"><br><br>
+        <img src="img/about2.jpg">
+    </div>
+
+            </div>
+
+            <div id="particles-js"><canvas height="608" width="1301" style="width: 100%; height: 100%;"></canvas></div>
+
+            <div class="preloader">
+                <div class="inner">
+
+                    <img src="img/logopreload.png">
+                    <span>BIM Lab is Loading</span>
+
+
+                    <div class="progress-bar">
+
+                        <!--<span>0</span>-->
+
+                        <div class="progress-bar_bg">
+                            <div></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <a class="blog-link" href="clients.php">
+                <img src="img/blogdark.png">
+                <span class="folded-corner"></span>
+            </a>
+           
+            <script src="javascript/jquery_002.js"></script>
+            <script>window.jQuery || document.write('<script src="javascript/jquery-1.11.2.min.js"><\/script>')</script>
+            <script src="javascript/velocity.js"></script>
+            <script src="javascript/plugins.js"></script>
+            <script src="javascript/main.js"></script>
+
+	
+
+</body></html>

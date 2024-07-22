@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style>
+
+@font-face {
+    font-family: 'Moayad_Light';
+    src: url('NeoSansProLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Moayad_Regular';
+    src: url('NeoSansPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.myfont{font-family: 'Moayad_Regular', Arial, Helvetica, sans-serif; font-size:34pt; }
+p{ font-size:14pt;font-family: 'Moayad_Light', Arial, Helvetica, sans-serif; }
+
+</style>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+		<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script type="text/javascript">
+var picture1 = "img/tbh_orange.png";
+var picture2 = "img/tbh.png";
+if (document.images) {
+image1 = new Image();
+image1.src = picture1
+image2 = new Image();
+image2.src = picture2;
+}
+function mover(img){
+document["change"].src = img.src;
+}
+function mout(img){
+document["change"].src = img.src;
+}
+</script>	
+<title>BIM Lab</title>
+<meta name="description" content="Engineering Services / BIM Services">
+<meta name="keywords" content="bim,jordan,amman,lab,building,information,modelling,modeling,implementation,engineering,services,revit,autodesk,developers,architecture,mep,structure,mechanical,electrical,plumbing,project,projects
+">
+<link rel='stylesheet' id='jayjay-css'  href='css/style.css' media='all' />
+<script type="text/javascript" src="javascript/jquery.js"></script>
+<script type="text/javascript" src="javascript/jquery-migrate.js"></script>
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/third-party.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="javascript/modernizr-2.8.3.min.js"></script>
+        <link type="text/css" media="screen" rel="stylesheet" href="css/awwwards.css" />
+<script> 
+jQuery(document).ready(function () { 
+$('.m-menu').mouseover(function() { 
+$(this).children('.arr-class').show(); 
+}); 
+ 
+$('.m-menu').mouseout(function() { 
+$(this).children('.arr-class').hide(); 
+}); 
+
+ 
+$('.preloader').show(); 
+var i=0; 
+var px="px"; 
+var x='"'; 
+var y;
+var mx=400;
+function myTimer() {
+i=i+10;
+mx=mx-10; 
+y=i+px; 
+$('.progress-bar_bg div').css("width",y); 
+
+if (mx == 0)
+{
+clearInterval(myVar);
+$('#page').show(); 
+$('.preloader').slideUp("slow");
+}
+}
+var myVar = setInterval(function(){ myTimer() }, 60); 
+}); 
+</script>
+
+</head>
+	<body tabindex="0" class="home page page-id-11 page-template page-template-template-home page-template-template-home-php">
+
+       
+
+<!--
+        <div id="nav_bar">
+
+            <a class="logo" rel="index" href="http://www.bimlab.com/">
+                <img src="img/bim-small.png" alt="">
+                <center></center>
+            </a>
+            
+            <div class="lang">
+                <a href="#" class="active">EN</a>
+                <a href="ar/services.html" class="">عر</a>
+            </div>
+            -->
+
+            
+        
+         <nav class="en">
+               <!-- <a rel="index" href="index.html" class="home-link active"><img src="img/home_orange.png"></a>
+                <a rel="BIM" href="BIM.html"><img src="img/bim.png"></a>
+                <a rel="about" href="about.html"><img src="img/about.png"></a>
+                <a rel="services" href="services.html"><img src="img/services.png"></a>
+                <a rel="projects" href="projects.php"><img src="img/projects.png"></a>
+                <a rel="contact" href="contact.php"><img src="img/contact.png"></a>-->
+                <a rel="index" href="index.html" class="m-menu"><i class="fa fa-home"></i>
+<div class="arr-class"></div>
+</a>
+
+                <a rel="BIM" href="bim.html" class="m-menu"><i class="fa fa-user-secret"></i><div class="arr-class"></div></a>
+                <a rel="about" href="aboutus.html" class="m-menu"><i class="fa fa-skyatlas"></i><div class="arr-class"></div></a>
+                <a rel="services" href="services.html" class="active m-menu"><i class="fa fa-terminal"></i><div class="arr-class"></div></a>
+                <a rel="projects" href="projects.php" class="m-menu"><i class="fa fa-picture-o"></i><div class="arr-class"></div></a>
+                <a rel="contact" href="contactus.php" class="m-menu"><i class="fa fa-envelope-o"></i><div class="arr-class"></div></a>
+            </nav>
+
+            <!--<ul>
+                <li><a href="https://www.twitter.com/BIMLab" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/bim-lab" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.facebook.com/BIMLabJo" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://thebimhub.com/companies/bim-lab-2/" target="_blank" onMouseOver="mover(image1)" onMouseOut="mout(image2)"><img name="change" src="img/tbh.png" border=0></a></li>
+            </ul>-->
+
+            <a id="mobile-link" href=""><i class="fa fa-bars"></i></a>
+
+        </div>
+
+        <div style="display: block; opacity: 1;" id="page" class="en">
+
+
+
+    <div class="container skills">
+
+        <!--<span class="tags top-tags"> &nbsp;&nbsp;&nbsp;&lt;body&gt;</span>-->
+
+       
+        <div class="text-zone">
+        <div id="details">
+         <h1 style="color:#FFF;font-family:'Moayad_Regular', Arial, Helvetica, sans-serif;" class="blast-root">BIM Design and Modeling</h1>
+
+
+            <p class="blast-root" style="font-family:'Moayad_Light', Arial, Helvetica, sans-serif;">This service is summarized as creating and documenting your design in any form needed, our BIM models can be modeled up to 7D ,giving our clients the ability to simulate and coordinate their design in all disciplines, moreover we can apply revolutionary design ideas using parametric architecture methods.<br><br>
+In addition, modelling can be done for analysis purposes.</p>
+        </div>
+        
+        <div style="display: none" id="c1">
+         <h1 style="color:#FFF;font-family:'Moayad_Regular', Arial, Helvetica, sans-serif;" class="blast-root">BIM Design and Modeling</h1>
+
+
+            <p class="blast-root" style="font-family:'Moayad_Light', Arial, Helvetica, sans-serif;">This service is summarized as creating and documenting your design in any form needed, our BIM models can be modeled up to 7D ,giving our clients the ability to simulate and coordinate their design in all disciplines, moreover we can apply revolutionary design ideas using parametric architecture methods.<br><br>
+In addition, modelling can be done for analysis purposes.</p>
+        </div>
+        
+        <div style="display: none" id="c2">
+         <h1 style="color:#FFF;font-family:'Moayad_Regular', Arial, Helvetica, sans-serif;" class="blast-root">BIM Research and Strategy Development</h1>
+
+
+            <p class="blast-root" style="font-family:'Moayad_Light', Arial, Helvetica, sans-serif;"><span style="font-family:'Moayad_Regular', Arial, Helvetica, sans-serif; font-size:14pt;">BIM Lab </span> research focuses on assessing the ability to transfer to BIM with the available team and equipment in addition to provide strategic solutions and timelines to your transformation process and developing your workflow.</p>
+        </div>
+        
+        
+        <div style="display: none" id="c3">
+         <h1 style="color:#FFF;font-family:'Moayad_Regular', Arial, Helvetica, sans-serif;" class="blast-root">BIM Implementation</h1>
+
+
+            <p class="blast-root" style="font-family:'Moayad_Light', Arial, Helvetica, sans-serif;"><span style="font-family:'Moayad_Regular', Arial, Helvetica, sans-serif; font-size:14pt;">BIM Lab </span> has the ability to implement BIM workflow for institutes based on their corporate standards starting from creating customized templates and families to BIM audit in addition to provide the needed equipment and tools.</p>
+        </div>
+        
+        <div style="display: none" id="c4">
+         <h1 style="color:#FFF;font-family:'Moayad_Regular', Arial, Helvetica, sans-serif;" class="blast-root">BIM Education</h1>
+
+
+            <p class="blast-root" style="font-family:'Moayad_Light', Arial, Helvetica, sans-serif;"><span style="font-family:'Moayad_Regular', Arial, Helvetica, sans-serif; font-size:14pt;">BIM Lab </span> provides customized training courses based on corporate needs , in addition to corporate coaching.</p>
+        </div>
+        
+        <div style="display: none" id="c5">
+         <h1 style="color:#FFF;font-family:'Moayad_Regular', Arial, Helvetica, sans-serif;" class="blast-root">BIM Software Development</h1>
+
+
+            <p class="blast-root" style="font-family:'Moayad_Light', Arial, Helvetica, sans-serif;"><span style="font-family:'Moayad_Regular', Arial, Helvetica, sans-serif; font-size:14pt;">BIM Lab </span> develops software solutions to meet local and regional markets, reaching corporates needs and solving outside-the-box problems.</p>
+        </div>
+        
+        <div style="display: none" id="c6">
+         <h1 style="color:#FFF;font-family:'Moayad_Regular', Arial, Helvetica, sans-serif;" class="blast-root">BIM Management and Project Management</h1>
+
+
+            <p class="blast-root" style="font-family:'Moayad_Light', Arial, Helvetica, sans-serif;"><span style="font-family:'Moayad_Regular', Arial, Helvetica, sans-serif; font-size:14pt;">BIM Lab </span> plans, manages, coordinates and performs clash detection on your BIM Models reducing costly reworks during construction and providing collaboration and productivity in the construction site.</p>
+        </div>
+        </div> 	
+        
+        
+
+
+
+        <!--<span class="tags bottom-tags">
+                 &nbsp;&nbsp;&nbsp;&lt;/body&gt;<br>
+                &lt;/html&gt;
+        </span>-->
+    </div>
+
+    <div class="skills-charts">
+
+               
+                
+               <div class="chart-group" contentId="c1">
+            <div style="width: 186px;" class="chart animated rotateIn circliful" data-dimension="120" data-text="99%" data-info="HTML5/CSS3" data-width="10" data-fontsize="22" data-percent="99" data-fgcolor="#08fdd8" data-bgcolor="#05564a" data-fill="transparent" data-icon="" data-icon-size="28" data-icon-color="#fff"><span style="line-height: 120px; font-size: 22px;font-family:'Moayad_Regular', Arial, Helvetica, sans-serif;" class="circle-text"><i style="color: rgb(153, 153, 153); font-size: 20px;" class="fa"></i>BIM</span><span style="line-height: 150px;font-family:'Moayad_Regular', Arial, Helvetica, sans-serif;" class="circle-info-half">Design and Modeling</span><canvas height="120" width="120"></canvas></div>      
+        </div>
+        
+      <div class="chart-group" contentId="c2">
+            <div style="width: 186px;" class="chart animated rotateIn circliful" data-dimension="120" data-text="99%" data-info="HTML5/CSS3" data-width="10" data-fontsize="22" data-percent="99" data-fgcolor="#08fdd8" data-bgcolor="#05564a" data-fill="transparent" data-icon="" data-icon-size="28" data-icon-color="#fff"><span style="line-height: 120px; font-size: 22px;font-family:'Moayad_Regular', Arial, Helvetica, sans-serif;" class="circle-text"><i style="color: rgb(153, 153, 153); font-size: 20px;" class="fa"></i>BIM</span><span style="line-height: 150px;font-family:'Moayad_Regular', Arial, Helvetica, sans-serif" class="circle-info-half">Research and Strategy Development</span><canvas height="120" width="120"></canvas></div>      
+        </div>
+        
+        <div class="chart-group" contentId="c3">
+            <div style="width: 186px;" class="chart animated rotateIn circliful" data-dimension="120" data-text="99%" data-info="HTML5/CSS3" data-width="10" data-fontsize="22" data-percent="99" data-fgcolor="#08fdd8" data-bgcolor="#05564a" data-fill="transparent" data-icon="" data-icon-size="28" data-icon-color="#fff"><span style="line-height: 120px; font-size: 22px;font-family:'Moayad_Regular', Arial, Helvetica, sans-serif;" class="circle-text"><i style="color: rgb(153, 153, 153); font-size: 20px;" class="fa"></i>BIM</span><span style="line-height: 150px;font-family:'Moayad_Regular', Arial, Helvetica, sans-serif" class="circle-info-half">Implementation </span><canvas height="120" width="120"></canvas></div>      
+        </div>
+        
+       <div class="chart-group" contentId="c4">
+            <div style="width: 186px;" class="chart animated rotateIn circliful" data-dimension="120" data-text="99%" data-info="HTML5/CSS3" data-width="10" data-fontsize="22" data-percent="99" data-fgcolor="#08fdd8" data-bgcolor="#05564a" data-fill="transparent" data-icon="" data-icon-size="28" data-icon-color="#fff"><span style="line-height: 120px; font-size: 22px;font-family:'Moayad_Regular', Arial, Helvetica, sans-serif;" class="circle-text"><i style="color: rgb(153, 153, 153); font-size: 20px;" class="fa"></i>BIM</span><span style="line-height: 150px;font-family:'Moayad_Regular', Arial, Helvetica, sans-serif" class="circle-info-half">Education</span><canvas height="120" width="120"></canvas></div>      
+        </div>
+        
+        <div class="chart-group" contentId="c5">
+            <div style="width: 186px;" class="chart animated rotateIn circliful" data-dimension="120" data-text="99%" data-info="HTML5/CSS3" data-width="10" data-fontsize="22" data-percent="99" data-fgcolor="#08fdd8" data-bgcolor="#05564a" data-fill="transparent" data-icon="" data-icon-size="28" data-icon-color="#fff"><span style="line-height: 120px; font-size: 22px;font-family:'Moayad_Regular', Arial, Helvetica, sans-serif;" class="circle-text"><i style="color: rgb(153, 153, 153); font-size: 20px;" class="fa"></i>BIM</span><span style="line-height: 150px;font-family:'Moayad_Regular', Arial, Helvetica, sans-serif" class="circle-info-half">Software Development</span><canvas height="120" width="120"></canvas></div>      
+        </div>
+        
+        <div class="chart-group" contentId="c6">
+            <div style="width: 186px;" class="chart animated rotateIn circliful" data-dimension="120" data-text="99%" data-info="HTML5/CSS3" data-width="10" data-fontsize="22" data-percent="99" data-fgcolor="#08fdd8" data-bgcolor="#05564a" data-fill="transparent" data-icon="" data-icon-size="28" data-icon-color="#fff"><span style="line-height: 120px; font-size: 22px;font-family:'Moayad_Regular', Arial, Helvetica, sans-serif;" class="circle-text"><i style="color: rgb(153, 153, 153); font-size: 20px;" class="fa"></i>BIM</span><span style="line-height: 150px;font-family:'Moayad_Regular', Arial, Helvetica, sans-serif" class="circle-info-half">Management and Project Management</span><canvas height="120" width="120"></canvas></div>      
+        </div>
+        
+        
+                
+        <!--<div class="clear"></div>
+
+        <img style="max-width:95%;margin-top: 40px;" src="img/timeline.png" alt="">
+
+    </div>-->
+
+            </div>
+            
+
+            <div id="particles-js"><canvas height="608" width="1301" style="width: 100%; height: 100%;"></canvas></div>
+
+            <div class="preloader">
+                <div class="inner">
+
+                    <img src="img/logopreload.png">
+                    <span>BIM Lab is Loading</span>
+
+
+                    <div class="progress-bar">
+
+                        <!--<span>0</span>-->
+
+                        <div class="progress-bar_bg">
+                            <div></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <a class="blog-link" href="clients.php">
+                <img src="img/blogdark.png">
+                <span class="folded-corner"></span>
+            </a>
+            <script src="javascript/jquery.js"></script>
+            <script>window.jQuery || document.write('<script src="javascript/jquery-1.11.2.min.js"><\/script>')</script>
+            <script src="javascript/velocity.js"></script>
+            <script src="javascript/plugins.js"></script>
+            <script src="javascript/main.js"></script>
+            <script>                 
+$(".chart-group").on("click", function() {
+    var _id = $(this).attr("contentId");
+    var _html = $('#'+_id).html()
+    $('#details').fadeOut(function(){
+        $(this).html(_html).fadeIn();
+    })
+});
+            </script>
+
+	
+<style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    .full-height {
+      min-height: 250vmin;
+      background: #f0f0f0; /* Example background */
+    }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .topnav {
+      overflow: hidden;
+      background-color: #ffffff00;
+    }
+    .topnav a {
+      float: calc(200px);
+      color: #ffffff;
+      text-align: center;
+      padding: 3px 8px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    .topnav a:hover {
+      background-color: #808080;
+      color: rgb(255, 170, 0);
+    }
+    .topnav a.active {
+      background-color: #000000;
+      color: rgb(255, 170, 0);
+    }
+    .content {
+      padding: 40px 8px; /* Adjust padding to prevent content from being hidden behind navbar */
+      margin-top: 0%; /* Margin to separate content from fixed navbar */
+      text-align: center; /* Center align the content */
+    }
+    @font-face {
+      font-family: 'Moayad_Light';
+      src: url('NeoSansProLight.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Moayad_Regular';
+      src: url('NeoSansPro.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+  </style>
+</head>
+<body>
+  <div class="topnav">
+        <a class="{% static '' %}" href="index.html">Home</a>
+        <a class="active" href="services.html">services</a>
+        <a href="contact us .html">Contact</a>
+        <a href="about.html">About us</a>
+        <a href="projects.html">Projects</a> <!-- Corrected the href -->
+        <a class="logo" rel="index" href="index.html">
+        <img src="img/bim-small.png" alt="horizontal">
+      </div>
+      
+      <div style="padding-left:8px">
+        <!-- Add content here if needed -->
+      </div>
+      
+      </body>
+      </html>
+</body></html>
