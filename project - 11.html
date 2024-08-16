@@ -3,17 +3,26 @@
 <head>
     <title>projects-details-</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <style>
         .full-height {
-          min-height: 100vh;
+          min-height: auto ;
+          height: auto;
           background: #f0f0f0; /* Example background */
+          overflow-y: visible;
+        }
+        body,html{
+          margin: 0;
+          min-height: 100%;
+          padding: 0;
+          overflow-y: auto;
         }
     body {
       margin: 0;
+      padding: 0;
       font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      flex-direction: column;
     }
     
     .topnav {
@@ -43,7 +52,9 @@
         padding: 80px 16px;  /* Adjust padding to prevent content from being hidden behind navbar */
         margin-top: 50px;  /* Margin to separate content from fixed navbar */
         text-align: center; /* Center align the content */
-    }
+        flex :1 0 auto 
+      }
+
     </style>
     </head>
     <body>
@@ -59,11 +70,6 @@
       <a href="about.html">About us</a>
       <a class="active" href ="projects - Copy.html">Projects</a>
     </div>
-    <div class="sticky-container">
-      <div class="bg-text">
-          BIM-LAB
-      </div>
-  </div>
     <div style="padding-left:16px">
       
       <style>
@@ -89,19 +95,12 @@
      background-repeat: no-repeat;
      background-size:contain;
      }
-     /* Images used */
-    .img1 { background-image: url("image test\images (17).jfif"); }
-    .img2 { background-image: url("img_girl.jpg"); }
-    .img3 { background-image: url("img_lights.jpg"); }
-    .img4 { background-image: url("img_nature.jpg"); }
-    .img5 { background-image: url("img_forest.jpg"); }
-    .img6 { background-image: url("img_woods.jpg"); }
     
 
     /* Position text in the middle of the page/image */
     .bg-text {
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    background-color: rgba(255, 255, 255, 0.4); /* Black w/opacity/see-through */
     color: white;
     font-weight:300;
     /*font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
@@ -118,17 +117,100 @@
     padding: 5px;
     text-align:center;
     }
+    .free-wall {
+        margin: 15;
+        right: 4%;
+        width: 90%;
+        float: right;
+    }
+    .brick img {
+        margin: 0;
+        display: block;
+    }
+    img {
+        vertical-align: middle;
+    }
+    .container {
+        position: top;
+        margin-top: 60px;
+      }
+    .mySlides {
+        display: none;
+    }
+    .cursor {
+        cursor: pointer;
+    }
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 50px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(255, 171, 62, 0.601);
+    }
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+    .caption-container {
+        text-align: center;
+        background-color: #f06c00;
+        padding: 2px 16px;
+        color: white;
+    }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .column {
+        float: left;
+        width: 12.5%;
+    }
+    .demo {
+        opacity: 0.6;
+    }
+    .active,
+    .demo:hover {
+        opacity: 1;
+    }
+    .project-description{
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px 40px; /* Added bottom padding */
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
     </style>
     </head>
-    <body>
+    <!-- <body>
         <div class=""></div>
         <a href="index.html"><img src="image test\1.jpg" alt="image1" style="width: 24%; border-radius: 3%;" height="900px"></a>                
-        <a href="project - 8 .html"><img src="The looby\180503_Main Shot2.jpg" alt="image1" style="width: 24%;border-radius: 3%" height="900px"></a>                
-        <a href="project-4.html"><img src="06 - Sands\ADIMINSTRATION\EXTERIOR\Enscape_2022-01-26-17-04-440.png" alt="Sands" style="width: 24%;border-radius: 3%" height="900px"></a>                
-        <a href="project-3.html"><img src="15-Wael Issa\Wael Issa Shot 01.jpg" alt="Wael Issa" style="width: 24%;border-radius: 3%" height="900px"></a>                
+        <a href="index.html"><img src="image test\2.jpg" alt="image1" style="width: 24%;border-radius: 3%" height="900px"></a>                
+        <a href="index.html"><img src="image test\3.jpg" alt="image1" style="width: 24%;border-radius: 3%" height="900px"></a>                
+        <a href="index.html"><img src="image test\4.jpg" alt="image1" style="width: 24%;border-radius: 3%" height="900px"></a>                
        <!--<div class="bg-text">BIM LAB</div>-->
     
-    </body>
+    </body> 
     <style>
     
     @font-face {
@@ -218,14 +300,105 @@
             margin: 0;
             display: block;
         }
+        * {
+box-sizing: border-box;
+}
+
+img {
+vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+position: top;
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+cursor: pointer;
+position: absolute;
+top: 40%;
+width: auto;
+padding: 16px;
+margin-top: -50px;
+color: white;
+font-weight: bold;
+font-size: 50px;
+border-radius: 0 3px 3px 0;
+user-select: none;
+-webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+background-color: #f06c00;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+text-align: center;
+background-color: #f06c00;
+padding: 2px 16px;
+color: white;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Six columns side by side */
+.column {
+float: left;
+width: 12.5%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+opacity: 1;
+}
+</style>
     </style>
 </head>
-<body tabindex="0" style="overflow-y: visible;" class="page page-id-15 page-template page-template-template-skills page-template-template-skills-php skills">
+<!-- <body tabindex="0" style="overflow-y: visible;" class="page page-id-15 page-template page-template-template-skills page-template-template-skills-php skills">
     <div id="nav_bar">
         <a class="logo" rel="index" href="index.html">
             <img src="img\bim-small - Copy.png" alt="">
             <center></center>
-        </a>
+        </a> -->
     
         <nav class="en">
         </nav>
@@ -246,7 +419,7 @@
                 </div>
             </div>
         </div>
-        <a class="blog-link" href="clients.php">
+        <a class="blog-link" href="#clients.php">
             <img src="img/blogdark.png">
             <span class="folded-corner"></span>
         </a>
@@ -287,9 +460,137 @@
         <script src="javascript/particles.js"></script>
         <script src="javascript/app.js"></script>
     </div>
+    <!-- <h2 style="text-align:center">Slideshow Gallery</h2> -->
+    <h2 style="color: #f06c00;">PRIVATE RESIDENCE - BADER AL JADEEDA -  </h2> 
+    <!-- <h3 style="color: #808080;">Project description</h3> -->
+<!--top images of the gallery-->
+<div class="container">
+<div class="mySlides">
+<div class="numbertext">1 / 7</div>
+<img src="BADER\001.jpeg" style="width:90%;padding-left: 200px ; height: 750px;">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">2 / 7</div>
+<img src="BADER\002.jpeg" style="width:90%;padding-left: 200px ; height: 750px;">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">3 / 7</div>
+<img src="BADER\003.jpeg" style="width:75%;padding-left: 450px ; height: 750px;">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">4 / 7</div>
+<img src="BADER\004.jpeg" style="width:75%;padding-left: 450px ; height: 750px;">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">5 / 7</div>
+<img src="BADER\005.jpeg" style="width:83%;padding-left: 350px ; height: 750px;">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">6 / 7</div>
+<img src="BADER\006.jpeg" style="width:80%;padding-left: 350px ; height: 750px;">
+</div>
+<div class="mySlides">
+<div class="numbertext">7 / 7</div>
+<img src="BADER\007.jpeg" style="width: 75%;padding-left: 450px ; height: 750px;">
+</div>
+
+
+
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+<div class="caption-container">
+<p id="caption"></p>
+</div>
+<!--low hover images galeray-->
+<div class="row">
+<div class="column">
+  <img class="demo cursor" src="BADER\001.jpeg" style="width:100%;height: 93.27px;" onclick="currentSlide(1)" alt="- BADER AL JADEEDA -">
+</div>
+<div class="column">
+  <img class="demo cursor" src="BADER\002.jpeg" style="width:100%;height: 93.27px;" onclick="currentSlide(2)" alt="- BADER AL JADEEDA -">
+</div>
+<div class="column">
+  <img class="demo cursor" src="BADER\003.jpeg" style="width:100%;height: 93.27px;" onclick="currentSlide(3)" alt="- BADER AL JADEEDA -">
+</div>
+<div class="column">
+  <img class="demo cursor" src="BADER\004.jpeg" style="width:100%;height: 93.27px;" onclick="currentSlide(4)" alt="- BADER AL JADEEDA -">
+</div>
+<div class="column">
+  <img class="demo cursor" src="BADER\005.jpeg" style="width:100%;height: 93.27px;" onclick="currentSlide(5)" alt="- BADER AL JADEEDA -">
+</div>    
+<div class="column">
+  <img class="demo cursor" src="BADER\006.jpeg" style="width:100%;height: 93.27px;" onclick="currentSlide(6)" alt="- BADER AL JADEEDA -">
+</div>
+<div class="row">
+<div class="column">
+  <img class="demo cursor" src="BADER\007.jpeg" style="width: 204.75px;height: 93.27px;"onclick = "currentSlide(8)" alt="- BADER AL JADEEDA -">
+</div>
+<!-- <div class="column">
+  <img class="demo cursor" src="New folder\Ray White Residence _ BIM Lab\Drawings (jpg)\TOP PLAN.jpg" style="width:159px;height: 93.27px;" onclick="currentSlide(7)" alt="Top plan " >
+</div> -->
+
+</div>
+</div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+let i;
+let slides = document.getElementsByClassName("mySlides");
+let dots = document.getElementsByClassName("demo");
+let captionText = document.getElementById("caption");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<div class="project-description">
+<h2 style="color: #f06c00;">PRIVATE RESIDENCE - BADER AL JADEEDA -  </h2>
+<p style="color: #f0f0f0;">PRIVATE RESIDENCE - BADER AL JADEEDA - 650 M2 </p>
+
+<h3 style="color: #f06c00;">Project Details</h3>
+<ul style="color: #f0f0f0;">
+<li>Location: [Amman,Jordan]</li>
+<li>Architecture Firm: BIM Lab</li>
+<li>Year: [Project Year]</li>
+<li>Lead Architects: Shaker Khulief</li>
+<li>Lead Architects e-mail: Shaker.kh@bimlab.com</li>
+</ul>
+
+<h3 style="color: #f06c00;">Project Description</h3>
+<p style="color: #f0f0f0;">
+  PRIVATE RESIDENCE - BADER AL JADEEDA - 650 M2</p>
+</div>
 </body>
 <html>
-<body>          
+<body>      
+   
         </div>
         
         <div style="padding-left:8px">
@@ -319,132 +620,7 @@
               -ms-flex-wrap: wrap; /* IE 10 */
               flex-wrap: wrap;
               padding: 0 4px;
-            }
-            
-            /* Create two equal columns that sits next to each other */
-            .column {
-              -ms-flex: 25%; /* IE 10 */
-              flex: 25%;
-              padding: 0 4px;
-            }
-            
-            .column img {
-              margin-top: 8px;
-              vertical-align: middle;
-            }
-            
-            /* Style the buttons */
-            .btn {
-              border: none;
-              outline: none;
-              padding: 10px 16px;
-              background-color: #f1f1f1;
-              cursor: pointer;
-              font-size: 18px;
-            }
-            
-            .btn:hover {
-              background-color: #ddd;
-            }
-            
-            .btn.active {
-              background-color: rgb(255, 170, 0);
-              color: white;
-            }
+            }                
             </style>
-            </head>
-            <body>            
-            <div class="header" id="myHeader" style="color: #f96b05;">
-              <h1>click on the image to open the project <style></style></h1>
-              Click on the buttons to change the grid view.</p>
-              <button class="btn" onclick="one()">1</button>
-              <button class="btn" onclick="two()">2</button>
-              <button class="btn active" onclick="four()">4</button>
-            </div>
-            
-            <!-- Photo Grid -->
-            <div class="row"> 
-              <div class="column">
-                <a href="project1.html"><img src="New folder\Ray White Residence _ BIM Lab\Renders (2880px)\TNAIL\001.jpg" alt="image1" style="width:100%;border-radius: 4%;"></a>
-                <a href="project-2.html"><img src="02 - Haidar Murad\night 1.jpg" style="width:100%;border-radius: 4%;"></a>
-                <a href="project  - 10 .html"><img src="PRIVATE VILLA\002.jpeg" style="width:100%;border-radius: 4%;"></a>
-                <a href="index.html"><img src="image test\images (5).jfif" style="width:100%;border-radius: 4%;"></a>
-                <a href="services.html"><img src="image test\images (6).jfif" style="width:100%;border-radius: 4%;"></a>
-                <a href="index.html"><img src="image test\images (7).jfif" style="width:100%;border-radius: 4%;"></a>
-              </div>
-              <div class="column">
-                <a href="project-3.html"><img src="15-Wael Issa\INTERIOR SHOTS\1.jpg" alt="image 8 " style="width:100%;border-radius: 4%; "></a>
-                <a href="project - 8 .html"><img src="The looby\180503_Main Shot.jpg" style="width:100%;border-radius: 4%;"></a>
-                <a href="index.html"><img src="image test\images (10).jfif" style="width:100%;border-radius: 4%;"></a>
-                <a href="index.html"><img src="image test\images (11).jfif" style="width:100%;border-radius: 4%;"></a>
-                <a href="index.html"><img src="image test\images (12).jfif" style="width:100%;border-radius: 4%;"></a>
-                <a href="index.html"><img src="image test\images (13).jfif" style="width:100%;border-radius: 4%;"></a>
-              </div>  
-              <div class="column">
-                <a href="project-4.html"><img src="06 - Sands\ADIMINSTRATION\EXTERIOR\Enscape_2022-01-26-18-44-530.png" style="width:100%;border-radius: 4%;height: 18%;"></a>
-                <a href="projec - 9 .html"><img src="sands kg\WhatsApp Image 2024-08-15 at 1.07.59 PM.jpeg" style="width:100%;border-radius: 4%;"></a>
-                <a href="project - 7 .html"><img src="abu rumman\BIMLab Villa -19.jpg" style="width:100%;border-radius: 4%;"></a>
-                <a href="index.html"><img src="image test\images (17).jfif" style="width:100%;border-radius: 4%;"></a>
-                <a href="index.html"><img src="image test\images (18).jfif" style="width:100%;border-radius: 4%;"></a>
-                <a href="index.html"><img src="image test\images (19).jfif" style="width:100%;border-radius: 4%;"></a>
-                <a href="index.html"><img src="image test\images (20).jfif" style="width:100%;border-radius: 4%;"></a>
-              </div>
-              <div class="column">
-                <a href="project - 5.html"><img src="04 - Khalid\Exterior Shot.jpg" style="width:100%;border-radius: 4%;"></a>
-                <a href="project - 11.html"><img src="BADER\001.jpeg" style="width:100%;border-radius: 4%;"></a>
-                <a href="project - 6 .html"><img src="17 shadi\DAY5.jpg" style="width:100%;border-radius: 4%;"></a>
-                <a href="index.html"><img src="image test\images (24).jfif" style="width:100%;border-radius: 4%;"></a>
-                <a href="index.html"><img src="image test\images (25).jfif" style="width:100%;border-radius: 4%;"></a>
-                <a href="index.html"><img src="image test\images (26).jfif" style="width:100%;border-radius: 4%;"></a>
-              </div>
-            </div>
-            
-            <script>
-            // Get the elements with class="column"
-            var elements = document.getElementsByClassName("column");
-            
-            // Declare a loop variable
-            var i;
-            
-            // Full-width images
-            function one() {
-                for (i = 0; i < elements.length; i++) {
-                elements[i].style.msFlex = "100%";  // IE10
-                elements[i].style.flex = "100%";
-              }
-            }
-            
-            // Two images side by side
-            function two() {
-              for (i = 0; i < elements.length; i++) {
-                elements[i].style.msFlex = "50%";  // IE10
-                elements[i].style.flex = "50%";
-              }
-            }
-            
-            // Four images side by side
-            function four() {
-              for (i = 0; i < elements.length; i++) {
-                elements[i].style.msFlex = "25%";  // IE10
-                elements[i].style.flex = "25%";
-              }
-            }
-            
-            // Add active class to the current button (highlight it)
-            var header = document.getElementById("myHeader");
-            var btns = header.getElementsByClassName("btn");
-            for (var i = 0; i < btns.length; i++) {
-              btns[i].addEventListener("click", function() {
-                var current = document.getElementsByClassName("active");
-                current[0].className = current[0].className.replace(" active", "");
-                this.className += " active";
-              });
-            }
-            </script>
-            
-            </body>
-            </html>          
-        
-        
 </body>
 </html>
