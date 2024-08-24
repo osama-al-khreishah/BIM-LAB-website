@@ -7,10 +7,10 @@
     
     
     <style>
-        .full-height {
-          min-height: 100vh;
-          background: #f0f0f0; /* Example background */
-        }
+    .full-height {
+      min-height: fit-content;
+      background: #f0f0f0; /* Example background */
+    }
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
@@ -90,12 +90,12 @@
      background-size:contain;
      }
      /* Images used */
-    .img1 { background-image: url("image test\images (17).jfif"); }
+    /* .img1 { background-image: url("image test\images (17).jfif"); }
     .img2 { background-image: url("img_girl.jpg"); }
     .img3 { background-image: url("img_lights.jpg"); }
     .img4 { background-image: url("img_nature.jpg"); }
     .img5 { background-image: url("img_forest.jpg"); }
-    .img6 { background-image: url("img_woods.jpg"); }
+    .img6 { background-image: url("img_woods.jpg"); } */
     
 
     /* Position text in the middle of the page/image */
@@ -361,6 +361,26 @@
               <button class="btn" onclick="two()">2</button>
               <button class="btn active" onclick="four()">4</button>
             </div>
+            <div class="preloader">
+              <div class="inner">
+
+                  <img src="img/logopreload.png">
+                  <span>BIM Lab is Loading</span>
+
+
+                  <div class="progress-bar">
+
+                      <!--<span>0</span>-->
+
+                      <div class="progress-bar_bg">
+                          <div></div>
+                      </div>
+
+                  </div>
+
+              </div>
+
+          </div>
             
             <!-- Photo Grid -->
             <div class="row"> 
@@ -369,37 +389,67 @@
                 <a href="project-2.html"target="_blank"><img src="02 - Haidar Murad\night 1.jpg" style="width:100%;border-radius: 4%;"></a>
                 <a href="project  - 10 .html"target="_blank"><img src="PRIVATE VILLA\002.jpeg" style="width:100%;border-radius: 4%;"></a>
                 <a href="project - 12.html"target="_blank"><img src="MIXED USED\001.jpeg" style="width:100%;border-radius: 4%;"></a>
-                <a href="services.html"target="_blank"><img src="image test\images (6).jfif" style="width:100%;border-radius: 4%;"></a>
-                <a href="index.html"target="_blank"><img src="image test\images (7).jfif" style="width:100%;border-radius: 4%;"></a>
+                <!-- <a href="services.html"target="_blank"><img src="image test\images (6).jfif" style="width:100%;border-radius: 4%;"></a>
+                <a href="index.html"target="_blank"><img src="image test\images (7).jfif" style="width:100%;border-radius: 4%;"></a> -->
               </div>
               <div class="column">
                 <a href="project-3.html"target="_blank"><img src="15-Wael Issa\INTERIOR SHOTS\1.jpg" alt="image 8 " style="width:100%;border-radius: 4%; "></a>
                 <a href="project - 8 .html"target="_blank"><img src="The looby\180503_Main Shot.jpg" style="width:100%;border-radius: 4%;"></a>
-                <a href="index.html"target="_blank"><img src="image test\images (10).jfif" style="width:100%;border-radius: 4%;"></a>
-                <a href="index.html"target="_blank"><img src="image test\images (11).jfif" style="width:100%;border-radius: 4%;"></a>
+                <a href="project - 13.html"target="_blank"><img src="MIXED USED\000.jpeg" style="width:100%;border-radius: 4%;"></a>
+                <!-- <a href="index.html"target="_blank"><img src="image test\images (11).jfif" style="width:100%;border-radius: 4%;"></a>
                 <a href="index.html"target="_blank"><img src="image test\images (12).jfif" style="width:100%;border-radius: 4%;"></a>
-                <a href="index.html"target="_blank"><img src="image test\images (13).jfif" style="width:100%;border-radius: 4%;"></a>
+                <a href="index.html"target="_blank"><img src="image test\images (13).jfif" style="width:100%;border-radius: 4%;"></a> -->
               </div>  
               <div class="column">
                 <a href="project-4.html"target="_blank"><img src="06 - Sands\ADIMINSTRATION\EXTERIOR\Enscape_2022-01-26-18-44-530.png" style="width:100%;border-radius: 4%;height: 18%;"></a>
                 <a href="projec - 9 .html"target="_blank"><img src="sands kg\WhatsApp Image 2024-08-15 at 1.07.59 PM.jpeg" style="width:100%;border-radius: 4%;"></a>
                 <a href="project - 7 .html"target="_blank"><img src="abu rumman\BIMLab Villa -19.jpg" style="width:100%;border-radius: 4%;"></a>
-                <a href="index.html"target="_blank"><img src="image test\images (17).jfif" style="width:100%;border-radius: 4%;"></a>
+                <!-- <a href="index.html"target="_blank"><img src="image test\images (17).jfif" style="width:100%;border-radius: 4%;"></a>
                 <a href="index.html"target="_blank"><img src="image test\images (18).jfif" style="width:100%;border-radius: 4%;"></a>
                 <a href="index.html"target="_blank"><img src="image test\images (19).jfif" style="width:100%;border-radius: 4%;"></a>
-                <a href="index.html"target="_blank"><img src="image test\images (20).jfif" style="width:100%;border-radius: 4%;"></a>
+                <a href="index.html"target="_blank"><img src="image test\images (20).jfif" style="width:100%;border-radius: 4%;"></a> -->
               </div>
               <div class="column">
                 <a href="project - 5.html"target="_blank"><img src="04 - Khalid\Exterior Shot.jpg" style="width:100%;border-radius: 4%;"></a>
                 <a href="project - 11.html"target="_blank"><img src="BADER\001.jpeg" style="width:100%;border-radius: 4%;"></a>
                 <a href="project - 6 .html"target="_blank"><img src="17 shadi\DAY5.jpg" style="width:100%;border-radius: 4%;"></a>
-                <a href="index.html"target="_blank"><img src="image test\images (24).jfif" style="width:100%;border-radius: 4%;"></a>
+                <!-- <a href="index.html"target="_blank"><img src="image test\images (24).jfif" style="width:100%;border-radius: 4%;"></a>
                 <a href="index.html"target="_blank"><img src="image test\images (25).jfif" style="width:100%;border-radius: 4%;"></a>
-                <a href="index.html"target="_blank"><img src="image test\images (26).jfif" style="width:100%;border-radius: 4%;"></a>
+                <a href="index.html"target="_blank"><img src="image test\images (26).jfif" style="width:100%;border-radius: 4%;"></a> -->
               </div>
             </div>
             
-            <script>
+<script>
+jQuery(document).ready(function () { 
+$('.m-menu').mouseover(function() { 
+$(this).children('.arr-class').show(); 
+}); 
+ 
+$('.m-menu').mouseout(function() { 
+$(this).children('.arr-class').hide(); 
+}); 
+$('.preloader').show(); 
+var i=0; 
+var px="px"; 
+var x='"'; 
+var y;
+var mx=400;
+function myTimer() {
+i=i+10;
+mx=mx-10; 
+y=i+px; 
+$('.progress-bar_bg div').css("width",y); 
+
+if (mx == 0)
+{
+clearInterval(myVar);
+$('#page').show(); 
+$('.preloader').slideUp("slow");
+}
+}
+var myVar = setInterval(function(){ myTimer() }, 60); 
+}); 
+
             // Get the elements with class="column"
             var elements = document.getElementsByClassName("column");
             
@@ -440,10 +490,9 @@
                 this.className += " active";
               });
             }
-            </script>
-            
-            </body>
-            </html>          
+</script>            
+</body>
+</html>          
         
         
 </body>
