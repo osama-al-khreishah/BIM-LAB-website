@@ -48,6 +48,28 @@ body {
     margin-top: 50px;  /* Margin to separate content from fixed navbar */
     text-align: center; /* Center align the content */
 }
+.mobile-header {
+  display: none; /* Hide by default */
+}
+
+@media only screen and (max-width: 600px) {
+  .mobile-header {
+    display: flex; /* Show only on mobile */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px; /* Adjust spacing */
+    margin-left:250px;
+  }
+
+  .mobile-header img {
+    width: 100px; /* Adjust size */
+    height: auto;
+  }
+}
+
+</style>
+
 </style>
 </head>
 <body>
@@ -63,6 +85,10 @@ body {
   <a href="about.html">About us</a>
   <a href ="projects - Copy.html">Projects</a>
   <!-- <a href="projects - Copy.html">TEST</a> -->
+</div>
+
+<div class="mobile-header">
+    <img class="jr" src="img/BIM-final-logo.png" alt="Logo">
 </div>
 
 <div style="padding-left:16px">
@@ -117,8 +143,8 @@ p{ font-size:14pt;font-family: 'Moayad_Light', Arial, Helvetica, sans-serif; }
 <meta name="twitter:domain" content="Engineering Services / BIM Services"/>
 <meta name="twitter:creator" content="@BIMLab"/>
 <script type="text/javascript">
-var picture1 = "img/tbh_orange.png";
-var picture2 = "img/tbh.png";
+/*var picture1 = "img/tbh_orange.png";
+var picture2 = "img/tbh.png";*/
 if (document.images) {
 image1 = new Image();
 image1.src = picture1
@@ -166,7 +192,11 @@ $(this).children('.arr-class').hide();
 }); 
 </script>
 
+<!--@media only screen and (max-width: 600px) {
+  body {
+    <img class="jr" src="img/BIM-final-logo.png">
 
+  }-->
 
     <div style="display: block; opacity: 1;" id="page" class="en">
 
@@ -231,18 +261,10 @@ $(this).children('.arr-class').hide();
                 </div>
 
             </div>
-
-
-
-           
-
             <script src="javascript/jquery_002.js"></script>
             <script>window.jQuery || document.write('<script src="javascript/jquery-1.11.2.min.js"><\/script>')</script>
             <script src="javascript/velocity.js"></script>
             <script src="javascript/plugins.js"></script>
             <script src="javascript/main.js"></script>
-
-	
-
 </body>
 </html>
